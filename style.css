@@ -13,6 +13,44 @@ h6 {
   margin: 0;
   font-family: "Manrope", sans-serif;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+}
+nav li a {
+  text-decoration: none;
+  color: #111d34;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 3px 0;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #111d34;
+  transition: 0.3s ease;
+}
+
+nav li a:hover::after {
+  width: 100%;
+}
 
 .section-hero {
   display: flex;
