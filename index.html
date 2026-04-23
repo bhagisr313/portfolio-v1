@@ -12,42 +12,325 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section-hero">
-        <div class="hero-content">
-          <h1>Bharghavi Ramaswamy</h1>
-          <h2>
-            Automation Engineer | Cloud Enthusiast | Aspiring Frontend Developer
-          </h2>
-          <p>
-            Automation Engineer skilled in Playwright, Selenium, and manual
-            testing, with a growing focus on cloud technologies and UI
-            development.<br />
-            Passionate about building reliable, scalable solutions while
-            continuously improving technical and problem-solving skills.
-          </p>
-        </div>
-        <div class="hero-img">
-          <img src="./img/headshot.jpg" height="1024px" alt="Hero Image" />
-        </div>
-      </section>
-      <section class="about-section">
-        <h3>About My Interests</h3>
-        <div class="interests"></div>
-      </section>
-    </main>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">SKILLS</a></li>
+            <li><a href="#services">EXPERIENCE</a></li>
+            <li><a href="#activities">ACTIVITIES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section-hero" id="home">
+          <div class="hero-container">
+            <div class="hero-content">
+              <h1>Bharghavi Ramaswamy</h1>
+              <h2>Automation Engineer | Cloud Enthusiast | Aspiring Frontend Developer</h2>
+
+              <p>
+                Automation Engineer skilled in Playwright, Selenium, and manual testing, with a growing focus on cloud technologies and UI development.
+                Passionate about building reliable, scalable solutions.
+              </p>
+              <div class="hero-highlights">
+                <div>
+                  <h3>2</h3>
+                  <p>Years Experience</p>
+                </div>
+                <div>
+                  <h3>10+</h3>
+                  <p>Projects & Test Cases</p>
+                </div>
+                <div>
+                  <h3>3+</h3>
+                  <p>Core Skills</p>
+                </div>
+              </div>
+
+              <div class="hero-buttons">
+                <a href="#services" class="btn">View Experience</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+              </div>
+            </div>
+
+            <div class="hero-img">
+              <img src="./img/headshot.jpg" alt="Profile Image" />
+            </div>
+          </div>
+        </section>
+        <section id="about" class="section-light">
+          <h2>Skills & Expertise</h2>
+
+          <div class="skills-wrapper">
+            <!-- QA -->
+            <div class="skill-card">
+              <h3><i class="fa-solid fa-bug"></i>&nbsp; QA</h3>
+
+              <div class="item">
+                <i class="fa-solid fa-list-check"></i>
+                <div>
+                  <strong>Manual Testing</strong>
+                  <p>Test cases, bug reporting, and functional validation</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <i class="fa-solid fa-robot"></i>
+                <div>
+                  <strong>Automation Testing</strong>
+                  <p>Automating test workflows for faster validation</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <i class="fa-solid fa-vial"></i>
+                <div>
+                  <strong>Playwright</strong>
+                  <p>End-to-end testing automation framework</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Programming -->
+            <div class="skill-card">
+              <h3><i class="fa-solid fa-laptop-code"></i>&nbsp; Programming</h3>
+
+              <div class="item">
+                <i class="fa-brands fa-python"></i>
+                <div>
+                  <strong>Python</strong>
+                  <p>Automation, scripting, and backend logic</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <i class="fa-brands fa-java"></i>
+                <div>
+                  <strong>Java</strong>
+                  <p>Object-oriented programming and backend development</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                  <strong>SQL</strong>
+                  <p>Database querying and management</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-card">
+              <h3><i class="fa-solid fa-code"></i>&nbsp; Frontend</h3>
+
+              <div class="item">
+                <i class="fa-brands fa-html5"></i>
+                <div>
+                  <strong>HTML</strong>
+                  <p>Structure and layout of web pages</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <div>
+                  <strong>CSS</strong>
+                  <p>Styling and responsive design</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <i class="fa-brands fa-js"></i>
+                <div>
+                  <strong>JavaScript</strong>
+                  <p>Interactive web development and client-side scripting</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- GCP -->
+            <div class="skill-card">
+              <h3><i class="fa-brands fa-google"></i>&nbsp; GCP</h3>
+
+              <div class="item">
+                <i class="fa-solid fa-cloud"></i>
+                <div>
+                  <strong>Google Cloud</strong>
+                  <p>Cloud computing, storage, and deployment services</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-light-alt" id="services">
+          <h2>Work Experience</h2>
+
+          <div class="experience-wrapper">
+            <!-- QSpiders -->
+            <div class="experience-card">
+              <h3><i class="fa-solid fa-graduation-cap"></i> QSpiders</h3>
+              <h4>Software Testing Training (6 Months)</h4>
+
+              <p>
+                Completed intensive practical training in Manual Testing, Automation Testing, and SQL at QSpiders, a certified software testing training
+                institute.
+              </p>
+              <ul>
+                <li><i class="fa-solid fa-star-of-life"></i>Manual Testing concepts: Test cases, STLC, Bug reporting</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Automation basics using Selenium & Playwright</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Hands-on SQL for database validation</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Worked on real-time application scenarios like Amazon, CitiBank, and PhonePe</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Practiced end-to-end testing concepts through hands-on projects</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Built strong fundamentals in Manual Testing, SQL, and Automation basics</li>
+              </ul>
+            </div>
+
+            <!-- SteelEye -->
+            <div class="experience-card">
+              <h3><i class="fa-solid fa-briefcase"></i> SteelEye</h3>
+              <h4>Automation Tester (1.6 Years)</h4>
+
+              <p>Worked as an Automation Tester contributing to UI and API test automation for financial applications.</p>
+
+              <ul>
+                <li><i class="fa-solid fa-star-of-life"></i>Built and maintained Playwright automation frameworks</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Executed regression and functional test suites</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Collaborated with developers for bug fixes and release quality</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Improved test efficiency through automation coverage</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Worked on major client projects including Fidelity and UBS during UAT and production releases</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Performed Smoke and Sanity testing to ensure build stability</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Handled key modules such as DAP, Workflow, and Neural (Communication Surveillance)</li>
+                <li><i class="fa-solid fa-star-of-life"></i>Contributed to newly introduced features and initiatives in the web application</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="activities">
+          <h2>Activities & Interests</h2>
+          <div class="activities-wrapper">
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fa-solid fa-plane"></i>
+                  <h3>Travel</h3>
+                </div>
+
+                <div class="card-back">
+                  <p>I love traveling and experiencing new cultures. Exploring new places broadens my perspective and fuels my creativity.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fa-solid fa-book"></i>
+                  <h3>Reading</h3>
+                </div>
+
+                <div class="card-back">
+                  <p>I love reading books and expanding my knowledge. It's a great way to unwind and explore different worlds and ideas.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>Coding</h3>
+                </div>
+
+                <div class="card-back">
+                  <p>
+                    Coding is not just a profession for me, but also a passion. I enjoy learning new programming languages and building projects in my free
+                    time.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fa-solid fa-chess"></i>
+                  <h3>Chess</h3>
+                </div>
+
+                <div class="card-back">
+                  <p>Chess is a strategic game that I enjoy playing. It helps improve my problem-solving skills and patience.</p>
+                </div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fa-solid fa-dumbbell"></i>
+                  <h3>Workout</h3>
+                </div>
+                <div class="card-back">
+                  <p>Regular exercise is important to me. I enjoy working out and staying fit, which helps me maintain a healthy lifestyle.</p>
+                </div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fa-solid fa-camera"></i>
+                  <h3>Photography</h3>
+                </div>
+                <div class="card-back">
+                  <p>Photography is a passion of mine. I enjoy capturing moments and telling stories through my lens.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section id="contact" class="contact-section section-light-soft">
+          <h2>Contact</h2>
+
+          <div class="contact-icons">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/bharghavi-sorba-ramaswamy-95ba56223" target="_blank" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/bhagisr313" target="_blank" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- Leetcode -->
+            <a href="https://leetcode.com/bhagisr313/" target="_blank" title="Leetcode">
+              <i class="fa-solid fa-code"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/Bharghavi Gudigar" target="_blank" title="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:bhagisr313@gmail.com" title="Gmail">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <!-- CSS Battle -->
+            <a href="https://cssbattle.dev/player/bhagi" title="CSSBattle">
+              <i class="fa-brands fa-css"></i>
+            </a>
+          </div>
+        </section>
+        <p>&copy; 2026 Bharghavi Ramaswamy. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
-`
