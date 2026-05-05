@@ -1,38 +1,48 @@
-# Portfolio
+# Bharghavi Ramaswamy Portfolio
 
-Welcome to my portfolio! This repository showcases my projects and skills in software development.
+A personal portfolio website built with HTML, CSS, and JavaScript showcasing Bharghavi's experience as an Automation Engineer, cloud enthusiast, and aspiring frontend developer.
 
-## About Me
+## Overview
 
-[Add a brief introduction about yourself, your background, and expertise]
+This repository contains a static portfolio landing page that highlights:
 
-## Projects
+- Professional summary and key skills
+- QA, programming, frontend, and cloud expertise
+- Certifications in Playwright, Java, and software testing
+- Work experience at QSpiders and SteelEye
+- Personal activities and interests
+- Contact links including LinkedIn, GitHub, LeetCode, Facebook, and email
 
-### Project 1
+## Features
 
-- **Description**: [Project description]
-- **Technologies**: [Languages/frameworks used]
-- **Link**: [GitHub repo or live demo]
+- Responsive hero section with resume and contact CTA buttons
+- Skills section with QA, programming, frontend, and Google Cloud expertise
+- Certification cards for training and professional credentials
+- Experience section with detailed responsibilities and achievements
+- Activities section with personal interests and hobbies
+- Contact footer with social and email links
+- Mobile-friendly navigation menu and smooth scrolling
 
-### Project 2
+## Built With
 
-- **Description**: [Project description]
-- **Technologies**: [Languages/frameworks used]
-- **Link**: [GitHub repo or live demo]
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Font Awesome icons
 
-## Skills
+## Usage
 
-- Programming Languages: [List your languages]
-- Frontend: [Frameworks/tools]
-- Backend: [Frameworks/tools]
-- Tools & Platforms: [Git, Docker, etc.]
+1. Open `index.html` in a web browser.
+2. Or serve the folder with a static server for local development.
 
 ## Contact
 
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn profile]
-- GitHub: [Your GitHub profile]
+- Email: bhagisr313@gmail.com
+- LinkedIn: https://www.linkedin.com/in/bharghavi-sorba-ramaswamy-95ba56223
+- GitHub: https://github.com/bhagisr313
 
-## License
+## Notes
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- The live resume is linked from the portfolio via the resume button.
+- This repository is intended as a personal online profile and portfolio showcase.

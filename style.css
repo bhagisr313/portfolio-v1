@@ -17,10 +17,12 @@ body.menu-open {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -322,6 +324,10 @@ h3 {
   box-shadow: 0 12px 25px rgba(0, 168, 168, 0.25);
 }
 
+.skill-card h3 {
+  padding-bottom: 24px;
+}
+
 /* ITEMS */
 .item {
   display: flex;
@@ -356,23 +362,33 @@ h3 {
   background: linear-gradient(to bottom, #c5f6fa 0%, #ffffff 100%);
 }
 .cert-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  gap: 30px;
   margin-top: 20px;
+}
+
+.cert-grid h3 {
+  padding-top: 12px;
 }
 
 .cert-mini {
   position: relative;
   border-radius: 10px;
-  padding: 40px 24px;
-  width: 360px;
+  padding: 20px;
+  width: 480px;
+  height: 240px;
   background: #fff;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("./img/cert.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cert-org {
@@ -391,8 +407,8 @@ h3 {
 .cert-title {
   position: absolute;
   top: 10px;
-  font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 20px;
   margin: 0;
   color: #111d34;
 }
@@ -651,6 +667,16 @@ footer p {
 /* =========================
    11. RESPONSIVE
 ========================= */
+
+@media (max-width: 1200px) {
+  .skills-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .navbar {
     justify-content: flex-end;
@@ -712,16 +738,16 @@ footer p {
     padding: 30px 0;
   }
 
-  .skills-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .experience-wrapper {
     grid-template-columns: 1fr;
   }
 
   .contact-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-front h3 {
+    font-size: 20px;
   }
 }
 
@@ -737,5 +763,10 @@ footer p {
 
   .contact-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .cert-mini {
+    width: 360px;
+    height: 180px;
   }
 }
