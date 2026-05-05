@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>My Portfolio v1.0</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,12 +18,16 @@
     <div class="container">
       <header class="header">
         <nav class="navbar">
-          <ul>
+          <ul id="nav-links">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">SKILLS</a></li>
             <li><a href="#services">EXPERIENCE</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
+
+          <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </nav>
       </header>
       <main>
@@ -53,7 +57,7 @@
               </div>
 
               <div class="hero-buttons">
-                <a href="#services" class="btn">View Resume</a>
+                <a href="https://drive.google.com/file/d/1vpvxdNwHh_S6hd1MZYkN61F01ocxGdep/view?usp=drive_link" target="_blank" class="btn">View Resume</a>
                 <a href="#contact" class="btn-outline">Contact Me</a>
               </div>
             </div>
@@ -358,8 +362,28 @@
             </a>
           </div>
         </section>
-        <p>&copy; 2026 Bharghavi Ramaswamy. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Bharghavi Ramaswamy. All rights reserved.</p>
       </footer>
     </div>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+      const links = document.querySelectorAll("#nav-links a");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        document.body.classList.toggle("menu-open");
+      });
+
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("show");
+          document.body.classList.remove("menu-open");
+        });
+      });
+
+      // ✅ Auto year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

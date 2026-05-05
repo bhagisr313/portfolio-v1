@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+body.menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -66,11 +72,21 @@ h3 {
   z-index: 1000;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #111d34;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 20px 40px;
+  position: relative;
+  z-index: 1000;
+  gap: 20px;
 }
 
 .navbar ul {
@@ -118,14 +134,9 @@ h3 {
   width: 100%;
 }
 
-.section-hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 #home {
   background: linear-gradient(to bottom, #c5f6fa 0%, #ffffff 100%);
+  padding: 10px 0;
 }
 .hero-container {
   display: flex;
@@ -134,7 +145,7 @@ h3 {
   width: 100%;
   max-width: 1200px;
   gap: 40px;
-  padding: 0 40px;
+  padding: 20px;
 }
 
 /* LEFT */
@@ -641,6 +652,52 @@ footer p {
    11. RESPONSIVE
 ========================= */
 @media (max-width: 900px) {
+  .navbar {
+    justify-content: flex-end;
+    padding: 20px;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navbar ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(197, 246, 250, 0.95);
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+
+    z-index: 1000;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar ul li a {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .navbar ul.show + .menu-toggle {
+    color: #111d34;
+  }
+
   .hero-container {
     flex-direction: column;
     text-align: center;
@@ -648,6 +705,11 @@ footer p {
 
   .hero-content p {
     margin: auto;
+  }
+
+  .section-hero {
+    min-height: auto;
+    padding: 30px 0;
   }
 
   .skills-wrapper {
